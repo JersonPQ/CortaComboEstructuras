@@ -4,7 +4,7 @@ int main(int argc, char const *argv[]) {
     int opcion;
     int cantidadPorciones;
     int cantidadComponente;
-    string nombreCombo;
+    string nombreCombo, nuevoNombreCombo;
     string nombreComponente;
     string unidadMedida;
     BaseDatos *bs = new BaseDatos();
@@ -33,6 +33,7 @@ int main(int argc, char const *argv[]) {
                  getline(cin, nombreCombo);
                  cout << "Cantidad de porciones: ";
                  cin >> cantidadPorciones;
+                 cin.ignore();
                  Combo *nuevoCombo = new Combo(nombreCombo, cantidadPorciones);
                  if (bs->estaCombo(nombreCombo)){
                      cout << "El nombre del combo ya está agregado." << endl << endl;
@@ -47,8 +48,9 @@ int main(int argc, char const *argv[]) {
 
                      cout << "Cantidad: ";
                      cin >> cantidadComponente;
+                     cin.ignore();
                      cout << "Unidad de medida (vaso, lata, unidad): ";
-                     cin >> unidadMedida;
+                     getline(cin, unidadMedida);
                      Componente *nuevoComponente = new Componente(nombreComponente, unidadMedida, cantidadComponente);
                      if (nuevoCombo->estaComponente(nombreComponente)){
                          cout << "Nombre de componente ya ha sido agregado." << endl << endl;
@@ -69,7 +71,25 @@ int main(int argc, char const *argv[]) {
         } else if (opcion == 4){
             /* code */
         } else if (opcion == 5){
-            /* code */
+            cout << "*****Modificar nombre de un combo*****" << endl << endl;
+            cout << "Nombre del combo a modificar: ";
+            cin.ignore();
+            getline(cin, nombreCombo);
+            if(bs->estaCombo(nombreCombo)){
+                for(int i = 0; i < 100; i++){
+                    if(bs->combos[i].nombre == nombreCombo){
+                        cout << endl <<"Ingrese nuevo nombre del combo: ";
+                        cin.ignore();
+                        getline(cin, nuevoNombreCombo);
+                        bs->combos[i].nombre = nuevoNombreCombo;
+                        cout << endl << "Nombre del combo cambiado exitosamente." <<endl << endl;
+                        break;
+                    }
+                }
+            }
+            else{
+                cout << endl <<"El combo ingresado NO existe!!" << endl << endl;
+            }
         } else if (opcion == 6){
             /* code */
         } else if (opcion == 7){
