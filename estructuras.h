@@ -18,6 +18,12 @@ struct Componente{
         unidadMedida = _unidadMedida;
         cantidad = _cantidad;
     }
+
+    void imprimirComponente(){
+        cout << "\tNombre componente: " << nombre << endl;
+        cout << "\tCantidad: " << cantidad << endl;
+        cout << "\tUnidad de medida (vaso, lata, unidad): " << unidadMedida << endl << endl;
+    }
 };
 
 struct Combo{
@@ -51,6 +57,15 @@ struct Combo{
         }
 
         return false;
+    }
+
+    void imprimirCombo(){
+        cout << "Porciones: " << cantidadPorciones << endl;
+        for (int i = 0; i < contador; ++i) {
+            componentes[i].imprimirComponente();
+        }
+
+        cout << endl << endl;
     }
 };
 

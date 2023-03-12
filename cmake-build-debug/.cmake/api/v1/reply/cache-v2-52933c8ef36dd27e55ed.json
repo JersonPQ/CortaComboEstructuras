@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/TEC/2023_Semestre_1/Estructuras_de_datos/Tarea2_Combos/cmake-build-debug"
+			"value" : "d:/TEC/2023_Semestre_1/Estructuras_de_datos/CortaComboEstructuras/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -643,7 +643,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/TEC/2023_Semestre_1/Estructuras_de_datos/Tarea2_Combos/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "D:/TEC/2023_Semestre_1/Estructuras_de_datos/CortaComboEstructuras/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -715,7 +715,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/TEC/2023_Semestre_1/Estructuras_de_datos/Tarea2_Combos"
+			"value" : "D:/TEC/2023_Semestre_1/Estructuras_de_datos/CortaComboEstructuras"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -727,7 +727,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/Tarea2_Combos"
+			"value" : "C:/Program Files (x86)/CortaComboEstructuras"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -943,7 +943,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Tarea2_Combos"
+			"value" : "CortaComboEstructuras"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1322,7 +1322,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "Tarea2_Combos_BINARY_DIR",
+			"name" : "CortaComboEstructuras_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1331,10 +1331,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/TEC/2023_Semestre_1/Estructuras_de_datos/Tarea2_Combos/cmake-build-debug"
+			"value" : "D:/TEC/2023_Semestre_1/Estructuras_de_datos/CortaComboEstructuras/cmake-build-debug"
 		},
 		{
-			"name" : "Tarea2_Combos_IS_TOP_LEVEL",
+			"name" : "CortaComboEstructuras_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1346,7 +1346,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "Tarea2_Combos_SOURCE_DIR",
+			"name" : "CortaComboEstructuras_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1355,7 +1355,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/TEC/2023_Semestre_1/Estructuras_de_datos/Tarea2_Combos"
+			"value" : "D:/TEC/2023_Semestre_1/Estructuras_de_datos/CortaComboEstructuras"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

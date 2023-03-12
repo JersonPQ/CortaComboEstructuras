@@ -107,7 +107,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/JetBrains/CLion 2022.3.1/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows.cmake"
   "C:/Program Files/JetBrains/CLion 2022.3.1/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake"
   "C:/Program Files/JetBrains/CLion 2022.3.1/bin/cmake/win/x64/share/cmake-3.24/Modules/ProcessorCount.cmake"
-  "D:/TEC/2023_Semestre_1/Estructuras_de_datos/Tarea2_Combos/CMakeLists.txt"
+  "D:/TEC/2023_Semestre_1/Estructuras_de_datos/CortaComboEstructuras/CMakeLists.txt"
   "CMakeFiles/3.24.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.24.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.24.2/CMakeRCCompiler.cmake"
@@ -133,5 +133,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Tarea2_Combos.dir/DependInfo.cmake"
+  "CMakeFiles/CortaComboEstructuras.dir/DependInfo.cmake"
   )

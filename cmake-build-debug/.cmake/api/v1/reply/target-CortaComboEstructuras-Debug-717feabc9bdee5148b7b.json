@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Tarea2_Combos.exe"
+			"path" : "CortaComboEstructuras.exe"
 		},
 		{
-			"path" : "Tarea2_Combos.pdb"
+			"path" : "CortaComboEstructuras.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -52,7 +52,7 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "D:/TEC/2023_Semestre_1/Estructuras_de_datos/Tarea2_Combos/."
+					"path" : "D:/TEC/2023_Semestre_1/Estructuras_de_datos/CortaComboEstructuras/."
 				}
 			],
 			"language" : "CXX",
@@ -70,7 +70,7 @@
 			]
 		}
 	],
-	"id" : "Tarea2_Combos::@6890427a1f51a3e7e1df",
+	"id" : "CortaComboEstructuras::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -90,8 +90,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Tarea2_Combos",
-	"nameOnDisk" : "Tarea2_Combos.exe",
+	"name" : "CortaComboEstructuras",
+	"nameOnDisk" : "CortaComboEstructuras.exe",
 	"paths" : 
 	{
 		"build" : ".",

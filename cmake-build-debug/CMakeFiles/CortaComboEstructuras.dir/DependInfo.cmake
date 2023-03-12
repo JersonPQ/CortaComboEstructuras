@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/TEC/2023_Semestre_1/Estructuras_de_datos/Tarea2_Combos/main.cpp" "CMakeFiles/Tarea2_Combos.dir/main.cpp.obj" "gcc" "CMakeFiles/Tarea2_Combos.dir/main.cpp.obj.d"
+  "D:/TEC/2023_Semestre_1/Estructuras_de_datos/CortaComboEstructuras/main.cpp" "CMakeFiles/CortaComboEstructuras.dir/main.cpp.obj" "gcc" "CMakeFiles/CortaComboEstructuras.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links.

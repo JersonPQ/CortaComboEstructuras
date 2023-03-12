@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2022.3.1\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\TEC\2023_Semestre_1\Estructuras_de_datos\Tarea2_Combos
+CMAKE_SOURCE_DIR = D:\TEC\2023_Semestre_1\Estructuras_de_datos\CortaComboEstructuras
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\TEC\2023_Semestre_1\Estructuras_de_datos\Tarea2_Combos\cmake-build-debug
+CMAKE_BINARY_DIR = D:\TEC\2023_Semestre_1\Estructuras_de_datos\CortaComboEstructuras\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\TEC\2023_Semestre_1\Estructuras_de_datos\Tarea2_Combos\cmake-build-debug\CMakeFiles D:\TEC\2023_Semestre_1\Estructuras_de_datos\Tarea2_Combos\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\TEC\2023_Semestre_1\Estructuras_de_datos\CortaComboEstructuras\cmake-build-debug\CMakeFiles D:\TEC\2023_Semestre_1\Estructuras_de_datos\CortaComboEstructuras\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\TEC\2023_Semestre_1\Estructuras_de_datos\Tarea2_Combos\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\TEC\2023_Semestre_1\Estructuras_de_datos\CortaComboEstructuras\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Tarea2_Combos
+# Target rules for targets named CortaComboEstructuras
 
 # Build rule for target.
-Tarea2_Combos: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tarea2_Combos
-.PHONY : Tarea2_Combos
+CortaComboEstructuras: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CortaComboEstructuras
+.PHONY : CortaComboEstructuras
 
 # fast build rule for target.
-Tarea2_Combos/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tarea2_Combos.dir\build.make CMakeFiles/Tarea2_Combos.dir/build
-.PHONY : Tarea2_Combos/fast
+CortaComboEstructuras/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CortaComboEstructuras.dir\build.make CMakeFiles/CortaComboEstructuras.dir/build
+.PHONY : CortaComboEstructuras/fast
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tarea2_Combos.dir\build.make CMakeFiles/Tarea2_Combos.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CortaComboEstructuras.dir\build.make CMakeFiles/CortaComboEstructuras.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -141,7 +141,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tarea2_Combos.dir\build.make CMakeFiles/Tarea2_Combos.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CortaComboEstructuras.dir\build.make CMakeFiles/CortaComboEstructuras.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -149,7 +149,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tarea2_Combos.dir\build.make CMakeFiles/Tarea2_Combos.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CortaComboEstructuras.dir\build.make CMakeFiles/CortaComboEstructuras.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -160,7 +160,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Tarea2_Combos
+	@echo ... CortaComboEstructuras
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

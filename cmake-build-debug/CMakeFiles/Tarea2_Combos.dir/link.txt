@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2022.3.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\Tarea2_Combos.dir/objects.a
-C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\ar.exe qc CMakeFiles\Tarea2_Combos.dir/objects.a @CMakeFiles\Tarea2_Combos.dir\objects1.rsp
-C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Tarea2_Combos.dir/objects.a -Wl,--no-whole-archive -o Tarea2_Combos.exe -Wl,--out-implib,libTarea2_Combos.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Tarea2_Combos.dir\linklibs.rsp

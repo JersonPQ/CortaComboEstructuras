@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2022.3.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\CortaComboEstructuras.dir/objects.a
+C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\ar.exe qc CMakeFiles\CortaComboEstructuras.dir/objects.a @CMakeFiles\CortaComboEstructuras.dir\objects1.rsp
+C:\PROGRA~1\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\CortaComboEstructuras.dir/objects.a -Wl,--no-whole-archive -o CortaComboEstructuras.exe -Wl,--out-implib,libCortaComboEstructuras.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\CortaComboEstructuras.dir\linklibs.rsp
