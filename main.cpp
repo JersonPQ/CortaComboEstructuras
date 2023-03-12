@@ -71,6 +71,7 @@ int main(int argc, char const *argv[]) {
         } else if (opcion == 5){
             cout << "*****Modificar nombre de un combo*****" << endl << endl;
             cout << "Nombre del combo a modificar: ";
+            cin.ignore();
             getline(cin, nombreCombo);
             if(bs->estaCombo(nombreCombo)){
                 for(int i = 0; i < 100; i++){
