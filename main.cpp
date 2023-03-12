@@ -42,10 +42,8 @@ int main(int argc, char const *argv[]) {
 
                  while (true){
                      cout << "Nombre de componente a agregar: ";
-                     cin.ignore();
                      getline(cin, nombreComponente);
                      if (nombreComponente == "") break;
-
                      cout << "Cantidad: ";
                      cin >> cantidadComponente;
                      cin.ignore();
@@ -73,7 +71,6 @@ int main(int argc, char const *argv[]) {
         } else if (opcion == 5){
             cout << "*****Modificar nombre de un combo*****" << endl << endl;
             cout << "Nombre del combo a modificar: ";
-            cin.ignore();
             getline(cin, nombreCombo);
             if(bs->estaCombo(nombreCombo)){
                 for(int i = 0; i < 100; i++){
@@ -91,13 +88,43 @@ int main(int argc, char const *argv[]) {
                 cout << endl <<"El combo ingresado NO existe!!" << endl << endl;
             }
         } else if (opcion == 6){
-            /* code */
+            cout << "*****Modificar cantidad de un componente de un combo*****" << endl << endl;
+            cout << "Nombre del combo: ";
+            cin.ignore();
+            getline(cin, nombreCombo);
+            if(bs->estaCombo(nombreCombo)){
+                for(int i = 0; i < 100; i++){
+                    if(bs->combos[i].nombre == nombreCombo){
+                        cout << endl <<"Nombre del componente: ";
+                        getline(cin, nombreComponente);
+                        if(bs->combos[i].estaComponente(nombreComponente)){
+                            for(int i=0; i<30; i++){
+                                if(bs->combos[i].componentes[i].nombre == nombreComponente){
+                                    cout << endl << "Digite la nueva cantidad del componente: ";
+                                    cin >> cantidadComponente;
+                                    cin.ignore();
+                                    bs->combos[i].componentes[i].cantidad = cantidadComponente;
+                                    cout << endl << "Cantidad modificada exitosamente" << endl;
+                                    break;
+                                }
+                            }
+                            break; // Este break es para salirse del for para buscar el combo
+                        }
+                    }
+                    else{
+                        cout << endl <<"El combo NO tiene ese componente!!" << endl << endl;
+                        break;
+                    }
+                }
+            }
+            else{
+                cout << endl <<"El combo ingresado NO existe!!" << endl << endl;
+            }
         } else if (opcion == 7){
             /* code */
         } else if (opcion == 8){
             /* code */
         } 
         else if (opcion == 9) break;
-    }
-    
+        }
 }
