@@ -60,6 +60,7 @@ struct Combo{
     }
 
     void imprimirCombo(){
+        cout << endl << "Nombre: " << nombre << endl;
         cout << "Porciones: " << cantidadPorciones << endl;
         for (int i = 0; i < contador; ++i) {
             componentes[i].imprimirComponente();
@@ -91,4 +92,26 @@ struct BaseDatos{
 
         return false;
     }
+
+    void borrarCombo(string _nombreCombo){
+         int indiceCoincidencia = 100;
+         for (int i = 0; i < 100; i++){
+             if (i > indiceCoincidencia) {
+                 // elementos después del elemento borrado son movidos una posición a la izquierda para no tener un
+                 // espacio vacío
+                 combos[i - 1] = combos[i];
+             } else if (combos[i].nombre == _nombreCombo){
+                 // variable toma el valor del índice del elemento a borrar
+                 indiceCoincidencia = i;
+                 combos[i] = Combo();
+                 contador--;
+             }
+         }
+    }
+
+    void imprimirCombos(){
+        for (int i = 0; i < contador; ++i) {
+            combos[i].imprimirCombo();
+        }
+     }
 };

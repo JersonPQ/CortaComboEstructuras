@@ -75,9 +75,20 @@ int main(int argc, char const *argv[]) {
             }
 
         } else if (opcion == 3){
-            /* code */
+            cout << "*****Borrar Combo*****" << endl << endl;
+            cout << "Nombre del combo a eliminar: ";
+            cin.ignore();
+            getline(cin, nombreCombo);
+            if (bs->estaCombo(nombreCombo)) {
+                bs->borrarCombo(nombreCombo);
+                cout << "Combo borrado exitosamente!" << endl << endl;
+            } else {
+                cout << endl <<"El combo ingresado NO existe!!" << endl << endl;
+            }
+
         } else if (opcion == 4){
-            /* code */
+            cout << "*****Imprimir todos los combos*****" << endl << endl;
+            bs->imprimirCombos();
         } else if (opcion == 5){
             cout << "*****Modificar nombre de un combo*****" << endl << endl;
             cout << "Nombre del combo a modificar: ";
@@ -168,5 +179,5 @@ int main(int argc, char const *argv[]) {
             cout << endl << endl <<"Ha salido del programa!!";
             break;
         } 
-        }
+    }
 }
