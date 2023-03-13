@@ -4,7 +4,8 @@ int main(int argc, char const *argv[]) {
     int opcion;
     int cantidadPorciones;
     int cantidadComponente;
-    string nombreCombo, nuevoNombreCombo;
+    string nombreCombo;
+    string nuevoNombreCombo;
     string nombreComponente;
     string unidadMedida;
     BaseDatos *bs = new BaseDatos();
@@ -85,10 +86,8 @@ int main(int argc, char const *argv[]) {
             if(bs->estaCombo(nombreCombo)){
                 for(int i = 0; i < 100; i++){
                     if(bs->combos[i].nombre == nombreCombo){
-                        cout << endl <<"Ingrese nuevo nombre del combo: ";
-                        cin.ignore();
+                        cout <<"Ingrese nuevo nombre del combo: ";
                         getline(cin, nuevoNombreCombo);
-                        cout << "NUEVO NOMBRE: " << nuevoNombreCombo << endl;
                         bs->combos[i].nombre = nuevoNombreCombo;
                         cout << endl << "Nombre del combo cambiado exitosamente." <<endl << endl;
                         break;
@@ -132,10 +131,42 @@ int main(int argc, char const *argv[]) {
                 cout << endl <<"El combo ingresado NO existe!!" << endl << endl;
             }
         } else if (opcion == 7){
-            /* code */
+            cout << "*****Agregar componente a un combo*****" << endl << endl;
+            cout << "Nombre del combo: ";
+            cin.ignore();
+            getline(cin, nombreCombo);
+            if(bs->estaCombo(nombreCombo)){
+                for(int i = 0; i < 100; i++){
+                    if(bs->combos[i].nombre == nombreCombo){
+                        cout << endl <<"Nombre del componente: ";
+                        getline(cin, nombreComponente);
+                        if(!(bs->combos[i].estaComponente(nombreComponente))){
+                            cout << "Cantidad: ";
+                            cin >> cantidadComponente;
+                            cin.ignore();
+                            cout << "Unidad de medida (vaso, lata, unidad): ";
+                            getline(cin, unidadMedida);
+                            Componente* nuevoComponente = new Componente(nombreComponente, unidadMedida, cantidadComponente);
+                            bs->combos[i].agregarComponente(*nuevoComponente);
+                            cout << endl << "Componente agregado exitosamente!!" << endl;
+                            
+                        }
+                        else{
+                            cout << endl << "El nombre del componente ingresado ya existe!!" << endl;
+                        }
+                        break;
+                    }
+                }
+            }
+            else{
+                cout << endl << "El combo ingresado NO existe!!" << endl << endl;
+            }
         } else if (opcion == 8){
             /* code */
         } 
-        else if (opcion == 9) break;
+        else if (opcion == 9){
+            cout << endl << endl <<"Ha salido del programa!!";
+            break;
+        } 
         }
 }
